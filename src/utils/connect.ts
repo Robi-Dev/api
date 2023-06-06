@@ -1,4 +1,5 @@
 import mongoose from 'mongoose'
+// @ts-ignore
 import config from 'config'
 
 import logger from '../utils/logger'
