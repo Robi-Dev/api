@@ -9,6 +9,7 @@
     "build": "tsc",
     "lint": "eslint --fix src test",
     "test": "jest",
+    "vercel-build": "echo hello",
     "typecheck": "tsc --noEmit"
   },
   "keywords": [],
