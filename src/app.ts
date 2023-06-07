@@ -11,7 +11,6 @@ import cookieParser from 'cookie-parser';
 import session from 'express-session';
 import passport from 'passport';
 
-import * as middlewares from './middlewares';
 import api from './api';
 import MessageResponse from './interfaces/MessageResponse';
 
@@ -39,7 +38,7 @@ app.use(express.json());
 
 app.get<{}, MessageResponse>('/', (req, res) => {
   res.json({
-    message: '🦄🌈✨👋🌎🌍🌏✨🌈🦄',
+    message: '✨ Welcome to the Rest API 👋',
   });
 });
 
