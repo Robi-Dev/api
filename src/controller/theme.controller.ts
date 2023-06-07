@@ -61,8 +61,13 @@ export async function getAllThemesHandler(req: Request, res: Response) {
 export async function getAllPublicThemesHandler(req: Request, res: Response) {
   const type = req.params.type;
 
+  const id = setTimeout(() => res.status(201).json({
+    message: 'There was an error fetching themes',
+  }), 7000);
+
   try {
     const themes = await getAllPublicThemes(type);
+    clearTimeout(id);
     res.status(200).json({
       message: 'Successfully fetched themes',
       data: themes,
