@@ -1,11 +1,9 @@
 import express from 'express';
+import { getAllPublicThemesHandler } from '../../../controller/theme.controller';
 
 const router = express.Router();
 
-type EmojiResponse = string[];
-
-router.get<{}, EmojiResponse>('/:slug', (req, res) => {
-  res.json(['😀', '😳', '🙄']);
-});
+// get all theme public
+router.get('/:type', getAllPublicThemesHandler);
 
 export default router;
