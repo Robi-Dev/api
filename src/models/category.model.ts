@@ -1,5 +1,5 @@
-import mongoose from 'mongoose'
-import { ThemeDocument } from './theme.model'
+import mongoose from 'mongoose';
+import { ThemeDocument } from './theme.model';
 
 export interface CategoryDocument {
   _id: string;
@@ -37,8 +37,8 @@ const categorySchema = new mongoose.Schema({
 });
 
 const CategoryModel = mongoose.model<CategoryDocument>(
-   'Category',
-   categorySchema,
-)
+  'Category',
+  categorySchema,
+);
 
-export default CategoryModel
+export default CategoryModel;

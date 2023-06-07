@@ -12,5 +12,6 @@ router.get<{}, MessageResponse>('/', (req, res) => {
 });
 
 router.use('/emojis', emojis);
+router.use('/themes/public/:slug', emojis);
 
 export default router;

@@ -1,4 +1,4 @@
-import Joi from 'joi'
+import Joi from 'joi';
 
 export const categorySchemaValidation = Joi.object({
   status: Joi.object({
@@ -21,4 +21,4 @@ export const categorySearchSchemaValidation = Joi.object({
   isExclusive: Joi.boolean(),
   isNew: Joi.boolean(),
   isFeatured: Joi.boolean(),
-})
+});
