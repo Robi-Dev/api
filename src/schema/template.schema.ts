@@ -30,4 +30,4 @@ export const templateSchema = Joi.object({
   angularHtml: Joi.string().empty(''),
   angularCss: Joi.string().empty(''),
   angularJs: Joi.string().empty(''),
-})
+});

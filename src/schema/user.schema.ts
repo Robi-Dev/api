@@ -18,7 +18,7 @@ export const userSchema = Joi.object({
     isAdmin: Joi.boolean(),
     isFreelancer: Joi.boolean(),
   }),
-})
+});
 
 export const loginSchema = Joi.object({
   email: Joi.string().email().required(),

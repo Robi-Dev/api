@@ -34,5 +34,5 @@ app.listen(port, () => {
   // Collection Routes
   collectionRoute(app)
   /* eslint-enable no-console */
-})
+});
 

@@ -11,4 +11,4 @@ export const themeSchema = Joi.object({
   icon: Joi.string(),
   slug: Joi.string().required(),
   type: Joi.string().required(),
-})
+});

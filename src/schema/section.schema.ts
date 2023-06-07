@@ -31,4 +31,4 @@ export const sectionSchema = Joi.object({
   angularHtml: Joi.string().empty(''),
   angularCss: Joi.string().empty(''),
   angularJs: Joi.string().empty(''),
-})
+});

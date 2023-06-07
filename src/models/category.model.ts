@@ -34,7 +34,7 @@ const categorySchema = new mongoose.Schema({
   description: String,
   slug: { type: String, unique: true, required: true },
   type: String,
-})
+});
 
 const CategoryModel = mongoose.model<CategoryDocument>(
    'Category',

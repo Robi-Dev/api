@@ -15,7 +15,7 @@ export const categorySchemaValidation = Joi.object({
   description: Joi.string().required(),
   slug: Joi.string().required(),
   type: Joi.string().required(),
-})
+});
 
 export const categorySearchSchemaValidation = Joi.object({
   isExclusive: Joi.boolean(),
