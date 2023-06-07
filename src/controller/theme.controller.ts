@@ -1,5 +1,4 @@
 import { Request, Response } from 'express';
-import { updateStatus } from '../service/section.service';
 import {
   createTheme,
   getThemeById,
